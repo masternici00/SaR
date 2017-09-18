@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-=======
-        <hr>
-        <footer>
-          <p>&copy; SaR AG 2017</p>
-        </footer>
-    </div>
->>>>>>> origin/master
-
+<h1>Nicolas</h1>
   </body>
 </html>
