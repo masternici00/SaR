@@ -19,7 +19,7 @@
 		  </div>
 		</div>
 		<div class="form-group">
-		  <label class="col-md-2 control-label" for="password">Password</label>
+		  <label class="col-md-2 control-label" for="inputPassword3">Password</label>
 		  <div class="col-md-4">
 		  	<input id="password" name="password" type="password" placeholder="Password" class="form-control input-md">
 		  </div>

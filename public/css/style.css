@@ -8,3 +8,8 @@
   position: relative;
   margin-top: 20px;
 }
+
+h1 {
+  font-style:normal;
+  text-shadow: 1px 1px #0404B4;
+}
