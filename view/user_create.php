@@ -1,34 +1,36 @@
-<form class="form-horizontal" action="/user/doCreate" method="post">
-	<div class="component" data-html="true">
-		<div class="form-group">
-		  <label class="col-md-2 control-label" for="firstName">Name</label>
-		  <div class="col-md-4">
-		  	<input id="firstName" name="firstName" type="text" placeholder="Name" class="form-control input-md">
-		  </div>
-		</div>
-		<div class="form-group">
-		  <label class="col-md-2 control-label" for="lastName">Surname</label>
-		  <div class="col-md-4">
-		  	<input id="lastName" name="lastName" type="text" placeholder="Surname" class="form-control input-md">
-		  </div>
-		</div>
-		<div class="form-group">
-		  <label class="col-md-2 control-label" for="email">Mail</label>
-		  <div class="col-md-4">
-		  	<input id="email" name="email" type="text" placeholder="example@example.com" class="form-control input-md">
-		  </div>
-		</div>
-		<div class="form-group">
-		  <label class="col-md-2 control-label" for="inputPassword3">Password</label>
-		  <div class="col-md-4">
-		  	<input id="password" name="password" type="password" placeholder="Password" class="form-control input-md">
-		  </div>
-		</div>
-		<div class="form-group">
-	      <label class="col-md-2 control-label" for="send">&nbsp;</label>
-		  <div class="col-md-4">
-		    <input id="send" name="send" type="submit" value="Send" class="btn btn-primary">
-		  </div>
+<form class="form-horizontal">
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-10">
+			<input type="password" class="form-control" id="inputPassword3" placeholder="Name">
 		</div>
 	</div>
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-2 control-label">Surname</label>
+		<div class="col-sm-10">
+			<input type="password" class="form-control" id="inputPassword3" placeholder="Surname">
+		</div>
+	</div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 </form>
