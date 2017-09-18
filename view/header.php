@@ -41,13 +41,13 @@
                 <a class="headerlink" href="/">Contact<span class="sr-only">(current)</span></a>
               </li>
               <li>
-                <a class="headerlink" href="#">Passworlist<span class="sr-only">(current)</span></a>
+                <a class="headerlink" href="#">Passwordlist<span class="sr-only">(current)</span></a>
               </li>
               <li>
                 <a class="headerlink" href="#">Groups<span class="sr-only">(current)</span></a>
               </li>
             </ul>
-              <a href="/login"><i id="loginbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
+              <a href="/user/index"><i id="loginbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
           <form class="navbar-form navbar-left"></form>
           </div>
         </div>

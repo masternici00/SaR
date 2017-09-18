@@ -7,8 +7,10 @@ class UserController
 {
     public function index()
     {
-        // Anfrage an die URI /user/crate weiterleiten (HTTP 302)
-        header('Location: /user/create');
+      $view = new View('user_index');
+      $view->title = 'Login';
+      $view->heading = 'Login';
+      $view->display();
     }
 
     public function create()
@@ -17,5 +19,15 @@ class UserController
         $view->title = 'Create User';
         $view->heading = 'Create User';
         $view->display();
+    }
+
+    public function doLogin() {
+
+    }
+
+
+    public function doCreate() {
+
+
     }
 }
