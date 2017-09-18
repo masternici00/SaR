@@ -8,7 +8,7 @@ class LoginController
 {
   $userRepository = new UserRepository();
 
-  $view = new View( viewfile: 'Login_index');
+  $view = new View('login');
   $view->title = 'Login';
   $view->error = false;
   $view->heading = 'Login';
@@ -28,7 +28,7 @@ public function doLogin()
     }
   }
 
-  $view = new View( viewfile: 'login_index');
+  $view = new View('login');
   $view->title = 'Login';
   $view->heading = 'Login';
   $view->error = !$loggedIn;

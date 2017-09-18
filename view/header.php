@@ -13,6 +13,7 @@
     <!-- Custom styles for this template -->
     <link href="/css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
 
+    <link href="/css/font/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -37,18 +38,16 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active">
-                <a class="headerlink" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="headerlink" href="/">Contact<span class="sr-only">(current)</span></a>
               </li>
               <li>
-                <a class="headerlink" href="/">Contact</a>
+                <a class="headerlink" href="#">Passworlist<span class="sr-only">(current)</span></a>
               </li>
               <li>
-                <a class="headerlink" href="#">Passworlist</a>
-              </li>
-              <li>
-                <a class="headerlink" href="#">Groups</a>
+                <a class="headerlink" href="#">Groups<span class="sr-only">(current)</span></a>
               </li>
             </ul>
+              <a href="/login"><i id="loginbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
           <form class="navbar-form navbar-left"></form>
           </div>
         </div>
