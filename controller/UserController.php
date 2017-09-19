@@ -35,13 +35,4 @@ class UserController
         }
       }
     }
-    public function doCreate()
-    {
-      if(isset($_POST['firstname']))
-        && isset($_POST['lastname'])
-        && isset($_POST['username'])
-        && isset($_POST['passwort'])
-    }
-    $this->model->addUser($_POST['firstname'], $_POST['lastname'], $_POST['username'],
-               $_POST['password'], false);
 }
