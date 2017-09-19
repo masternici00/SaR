@@ -7,7 +7,7 @@ class UserController
 {
     public function login()
     {
-      
+
       $view = new View('user_login');
       $view->title = 'Login';
       $view->heading = 'Login';
