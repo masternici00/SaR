@@ -29,11 +29,6 @@ class PasswordController
         $view->display();
     }
 
-    public function delete()
-    {
-      $view = new View('password_delete');
-      $view->title = 'Delete Password';
-      $view->heading = 'Delete Password';
-      $view->display();
+    public function doDelete(){
     }
 }
