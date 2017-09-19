@@ -44,7 +44,8 @@
                 <a class="headerlink" href="#">Groups<span class="sr-only">(current)</span></a>
               </li>
             </ul>
-              <a href="/user/index"><i id="loginbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
+              <a href="/User/login"><i id="loginbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
+              <a href="/User/singin"><i id="loginbutton" class="fa fa-sign-in" aria-hidden="true"></i></a>
           <form class="navbar-form navbar-left"></form>
           </div>
         </div>

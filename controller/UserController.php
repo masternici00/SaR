@@ -5,29 +5,38 @@
  */
 class UserController
 {
-    public function index()
+    public function login()
     {
-      $view = new View('user_index');
+      
+      $view = new View('user_login');
       $view->title = 'Login';
       $view->heading = 'Login';
       $view->display();
     }
 
-    public function create()
+    public function singin()
     {
-        $view = new View('user_create');
-        $view->title = 'Create User';
-        $view->heading = 'Create User';
-        $view->display();
+      $view = new View('user_singin');
+      $view->title = 'Sing In';
+      $view->heading = 'Sing In';
+      $view->display();
     }
 
-    public function doLogin() {
-
+    public function doLogin()
+    {
+      $userRepository = new UserRepository();
+      $loggedIn = false;
+      foreach ($userRepository->readAll() as $user) {
+        if ($user->email == $_POST['username']){
+          if ($user->password == shal($_POST['password'])) {
+            $_SESSION['logged_in_user'] = $user->id;
+            $loggedIn = true;
+          }
+        }
+      }
     }
-
-
-    public function doCreate() {
-
+    public function doCreate()
+    {
 
     }
 }
