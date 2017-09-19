@@ -7,7 +7,7 @@ class UserController
 {
     public function login()
     {
-      
+
       $view = new View('user_login');
       $view->title = 'Login';
       $view->heading = 'Login';
@@ -37,6 +37,9 @@ class UserController
     }
     public function doCreate()
     {
-
+      if(isset($_POST['firstname']))
+        && isset($_POST['lastname'])
+        && isset($_POST['username'])
+        && isset($_POST['passwort'])
     }
 }
