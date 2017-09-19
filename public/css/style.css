@@ -23,3 +23,11 @@ h1 {
   align-self: center;
   width: 250px;
 }
+
+.rahmen{
+  margin: 10px 200px;
+  padding: 10px 10px;
+  border-width: thick;
+  border-style: inset;
+  border-color: #0404B4;
+}
