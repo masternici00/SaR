@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><?= $title ?> | Verwaltung</title>
+    <title><?= $title ?></title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active">
-                <a class="headerlink" href="#">Passwordlist<span class="sr-only">(current)</span></a>
+                <a class="headerlink" href="password/index">Passwordlist<span class="sr-only">(current)</span></a>
               </li>
               <li>
                 <a class="headerlink" href="#">Groups<span class="sr-only">(current)</span></a>
