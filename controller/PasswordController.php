@@ -30,5 +30,6 @@ class PasswordController
     }
 
     public function doDelete(){
+      
     }
 }
