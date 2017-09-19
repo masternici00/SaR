@@ -42,4 +42,6 @@ class UserController
         && isset($_POST['username'])
         && isset($_POST['passwort'])
     }
+    $this->model->addUser($_POST['firstname'], $_POST['lastname'], $_POST['username'],
+               $_POST['password'], false);
 }
