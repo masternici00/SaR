@@ -1,12 +1,8 @@
-﻿DROP TABLE IF EXISTS user;
-CREATE TABLE  user (
-  id        INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  firstName VARCHAR(64)  NOT NULL,
-  lastName  VARCHAR(64)  NOT NULL,
-  email     VARCHAR(128) NOT NULL,
-  password  VARCHAR(40)  NOT NULL,
-  PRIMARY KEY  (id)
-);
+create Database SaR;
 
-INSERT INTO user (firstName, lastName, email, password) VALUES ('Ramon',  'Binz',  'ramon.binz@bbcag.ch',   sha1('ramon'));
-INSERT INTO user (firstName, lastName, email, password) VALUES ('Samuel', 'Wicky', 'samuel.wicky@bbcag.ch', sha1('samuel'));
+use SaR;
+
+create Table user(id int primary key auto_increment not null, firstname varchar(45), lastname varchar(45), username varchar(45), passwort varchar(20));
+
+create Table passwort(id int primary key auto_increment not null, user_id int, konto varchar(45), username varchar(45), passwort varchar(45), comment varchar(100),
+foreign key (user_id) references user (id));
