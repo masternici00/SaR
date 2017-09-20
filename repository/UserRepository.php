@@ -36,39 +36,45 @@ class UserRepository extends Repository
         }
         return $statement->insert_id;
     }
-     public function getAllUsers(){
-       $users = [];
-       $query = "SELECT username from $this->tableName";
-       $statement = ConnectionHandler::getConnection()->prepare($query);
-       if ($statement->execute()){
-         while ($row = $statement->fetch()) {
-           array_push($users, $row['username']);
-         }
-       }
-       return $users;
-     }
-
-
-
-
-    public function selectUser($username)
-        {
-          $query = "SELECT * FROM {$this->tableName} WHERE mail=?";
-          $statement = ConnectionHandler::getConnection()->prepare($query);
-          $statement->bind_param('s', $username);
-          $statement->execute();
-          // Resultat der Abfrage holen
-          $result = $statement->get_result();
-          if (!$result) {
-              throw new Exception($statement->error);
+    public function getAllUsers(){
+     $users = [];
+     $query = "SELECT username from $this->tableName";
+     $statement = ConnectionHandler::getConnection()->prepare($query);
+     if ($statement->execute()){
+          /* bind result variables */
+          $statement->bind_result($name);
+          /* fetch values */
+          while ($statement->fetch()) {
+            array_push($users, $name);
           }
-          // Ersten Datensatz aus dem Reultat holen
-          $row = $result->fetch_object();
-          // Datenbankressourcen wieder freigeben
-          $result->close();
-          // Den gefundenen Datensatz zurückgeben
-          return $row->name;
-        }
+     }
+     /* close statement */
+     $statement->close();
+     return $users;
+   }
+
+
+
+
+     public function selectUser($username)
+       {
+           $query = "SELECT name FROM {$this->tableName} WHERE mail=?";
+           $statement = ConnectionHandler::getConnection()->prepare($query);
+           $statement->bind_param('s', $username);
+           $statement->execute();
+           $result = $statement->get_result();
+           if (!$result)
+           {
+               throw new Exception($statement->error);
+           }
+           $num_rows = mysqli_num_rows($result);
+           $available = true;
+           if($num_rows != 0)
+           {
+               $available = false;
+           }
+         }
+           return $available;
 
 
 
