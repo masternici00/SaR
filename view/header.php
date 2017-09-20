@@ -40,9 +40,6 @@
               <li class="active">
                 <a class="headerlink" href="password/index">Passwordlist<span class="sr-only">(current)</span></a>
               </li>
-              <li>
-                <a class="headerlink" href="#">Groups<span class="sr-only">(current)</span></a>
-              </li>
             </ul>
             <a href="/User/singin"><i id="loginbutton" class="fa fa-sign-in" aria-hidden="true"></i></a>
               <a href="/User/login"><i id="singinbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>

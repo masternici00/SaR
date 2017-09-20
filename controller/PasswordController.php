@@ -30,6 +30,10 @@ class PasswordController
     }
 
     public function doDelete(){
-      
+
+    }
+
+    public function doCreate(){
+    
     }
 }

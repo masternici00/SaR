@@ -1,4 +1,4 @@
-<form class="form-horizontal" action="/password/create">
+<form class="form-horizontal" action="/password/doCreate">
   <div class="rahmen">
 
   <div class="form-group">
