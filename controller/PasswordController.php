@@ -7,7 +7,8 @@ class PasswordController
 {
     public function index()
     {
-      if (!empty($user)){
+
+      if (isset($_SESSION['logged_in_user'])){
         $view = new View('password_index');
         $view->title = 'Passwordlist';
         $view->heading = 'Passwordlist';

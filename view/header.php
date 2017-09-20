@@ -25,11 +25,6 @@
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/"><img alt="Brand" src="/images/Logo.jpg"></a>
           </div>
@@ -43,6 +38,7 @@
             </ul>
             <a href="/User/singin"><i id="loginbutton" class="fa fa-sign-in" aria-hidden="true"></i></a>
               <a href="/User/login"><i id="singinbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
+              <a href="/User/Logout"><i class="fa fa-meh-o" aria-hidden="true"></i></a>
           <form class="navbar-form navbar-left"></form>
           </div>
         </div>
