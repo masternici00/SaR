@@ -38,7 +38,7 @@
             </ul>
             <a href="/User/singin"><i id="loginbutton" class="fa fa-sign-in" aria-hidden="true"></i></a>
               <a href="/User/login"><i id="singinbutton" class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
-              <a href="/User/Logout"><i class="fa fa-meh-o" aria-hidden="true"></i></a>
+              <a href="/User/Logout"><i id="logoutbutton" class="fa fa-meh-o" aria-hidden="true"></i></a>
           <form class="navbar-form navbar-left"></form>
           </div>
         </div>

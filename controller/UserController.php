@@ -75,7 +75,7 @@ public function doCreate(){
   if (empty($AusgabeControl))
   {
           $userrepository = new UserRepository();
-          $userid = $userrepository->create($surname, $firstname, $username, $password);
+          $userid = $userrepository->create($firstname, $surname, $username, $password);
           $ausgabe = 'Der Benutzer wurde Erstellt!';
           $titleAusgabe = 'Success';
   }

@@ -1,4 +1,4 @@
-<form class="form-horizontal" action="/password/doCreate">
+<form class="form-horizontal" action="/password/create">
   <div class="rahmen">
 
   <div class="form-group">
@@ -24,7 +24,7 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button method="post" type="submit" class="btn btn-default">Submit</button>
     </div>
   </div>
 </div>
