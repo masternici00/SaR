@@ -16,8 +16,8 @@ public function login()
 public function singin()
 {
   $view = new View('user_singin');
-  $view->title = 'Sing In';
-  $view->heading = 'Sing In';
+  $view->title = 'Register';
+  $view->heading = 'Register';
   $view->ausgabe = '';
   $view->display();
 }
@@ -102,9 +102,11 @@ public function Logout(){
   header("location:/");
 }
 public function doLogin(){
+  echo 'Hallo Labi';
   $userRepository = new UserRepository();
   $error = false;
   $loggedIn = false;
+
   foreach ($userRepository->readAll() as $user) {
     if ($user->username  == $_POST['username']) {
       if ($user->password  == sha1($_POST['password'])){
@@ -118,7 +120,8 @@ public function doLogin(){
   $error = true;
   if ($loggedIn) {
     header('Location: /');
-    
+    die();
+
   }
   else {
     $ausgabe = 'Login Fehlgschlagen!';
