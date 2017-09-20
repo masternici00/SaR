@@ -16,6 +16,13 @@
   margin-top: 20px;
 }
 
+#logoutbutton{
+  float: right;
+  font-size: 40px;
+  position: relative;
+  margin: 20px 12px;
+}
+
 h1 {
   text-shadow: 1px 1px #0404B4;
   text-align: center;
