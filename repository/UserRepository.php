@@ -58,7 +58,7 @@ class UserRepository extends Repository
 
      public function selectUser($username)
        {
-           $query = "SELECT name FROM {$this->tableName} WHERE mail=?";
+           $query = "SELECT username FROM {$this->tableName} WHERE username=?";
            $statement = ConnectionHandler::getConnection()->prepare($query);
            $statement->bind_param('s', $username);
            $statement->execute();
@@ -73,10 +73,9 @@ class UserRepository extends Repository
            {
                $available = false;
            }
-         }
+
            return $available;
-
-
+        }
 
 
 

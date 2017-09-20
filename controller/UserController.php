@@ -27,12 +27,12 @@ public function doCreate(){
   //die("test");
   // Werte aus $POST auslesen.
   $username = $_POST['username'];
-  $firstname = $_POST['firstname'];
-  $lastname = $_POST['lastname'];
+  $firstname  = $_POST['firstname'];
+  $surname  = $_POST['surname'];
   $password = $_POST['password'];
   // validieren
   $UserRepository = new UserRepository();
-  $benutzerexist = $UserRepository->selectBenutzer($username);
+  $benutzerexist = $UserRepository->selectUser($username);
   // Benutzername Validierung
   if (isset($username) && !empty($username))
   {
@@ -75,7 +75,7 @@ public function doCreate(){
   if (empty($AusgabeControl))
   {
           $userrepository = new UserRepository();
-          $userid = $userrepository->create($username, $firstname, $surname, $password);
+          $userid = $userrepository->create($surname, $firstname, $username, $password);
           $ausgabe = 'Der Benutzer wurde Erstellt!';
           $titleAusgabe = 'Success';
   }
@@ -106,8 +106,8 @@ public function doLogin(){
   $error = false;
   $loggedIn = false;
   foreach ($userRepository->readAll() as $user) {
-    if ($user->username == $_POST['username']) {
-      if ($user->password == sha1($_POST['password'])){
+    if ($user->username  == $_POST['username']) {
+      if ($user->password  == sha1($_POST['password'])){
         $_SESSION['logged_in_user'] = $user->username;
         $loggedIn = true;
       } else {
@@ -118,7 +118,7 @@ public function doLogin(){
   $error = true;
   if ($loggedIn) {
     header('Location: /');
-    die();
+    
   }
   else {
     $ausgabe = 'Login Fehlgschlagen!';
@@ -129,10 +129,5 @@ public function doLogin(){
     $view->heading = 'Login Fehlgschlagen';
     $view->display();
   }
-  $view = new View('user_login');
-  $view->title = 'Login';
-  $view->heading = 'Login';
-  $view->error = $error;
-  $view->display();
 }
 }

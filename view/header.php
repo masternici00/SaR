@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active">
-                <a class="headerlink" href="password/index">Passwordlist<span class="sr-only">(current)</span></a>
+                <a class="headerlink" href="/password/index">Passwordlist<span class="sr-only">(current)</span></a>
               </li>
             </ul>
             <a href="/User/singin"><i id="loginbutton" class="fa fa-sign-in" aria-hidden="true"></i></a>

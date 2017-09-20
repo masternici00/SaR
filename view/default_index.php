@@ -27,3 +27,4 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
 
 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
 </div>
+<h1><?php echo $user;?></h1>

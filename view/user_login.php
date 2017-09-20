@@ -1,16 +1,16 @@
-  <form class="form-horizontal" action="/user/doLogin">
+  <form class="form-horizontal" action="/user/doLogin" method="post">
     <div class="rahmen">
     <div class="form-group">
       <label for="username" class="col-sm-2 control-label">Username</label>
       <div class="col-sm-10">
-        <input type="username" class="form-control" id="inpuUsername" placeholder="Username">
+        <input type="username" name="username" class="form-control" id="inpuUsername" placeholder="Username" pattern="[A-Za-z0-9!?%*#@$]{1,}">
       </div>
     </div>
 
     <div class="form-group">
       <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
       <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
       </div>
     </div>
 

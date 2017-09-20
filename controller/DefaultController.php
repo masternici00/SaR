@@ -38,6 +38,7 @@ class DefaultController
         //   View Klasse beschrieben.
         $view = new View('default_index');
         $view->title = 'Home';
+        $view->user = $_SESSION['logged_in_user'];
         $view->heading = 'Startseite';
         $view->display();
     }

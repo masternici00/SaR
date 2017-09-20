@@ -7,10 +7,21 @@ class PasswordController
 {
     public function index()
     {
-      $view = new View('password_index');
-      $view->title = 'Passwordlist';
-      $view->heading = 'Passwordlist';
-      $view->display();
+      if (!empty($user)){
+        $view = new View('password_index');
+        $view->title = 'Passwordlist';
+        $view->heading = 'Passwordlist';
+        $view->user = $_SESSION['logged_in_user'];
+        $view->display();
+
+
+      }
+      else{
+        $view = new View('user_login');
+        $view->title = 'Login';
+        $view->heading = 'Login';
+        $view->display();
+      }
     }
 
     public function create()
@@ -34,6 +45,6 @@ class PasswordController
     }
 
     public function doCreate(){
-    
+
     }
 }
