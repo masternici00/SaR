@@ -16,8 +16,8 @@ public function login()
 public function singin()
 {
   $view = new View('user_singin');
-  $view->title = 'Sing In';
-  $view->heading = 'Sing In';
+  $view->title = 'Register';
+  $view->heading = 'Register';
   $view->ausgabe = '';
   $view->display();
 }
@@ -118,7 +118,7 @@ public function doLogin(){
   $error = true;
   if ($loggedIn) {
     header('Location: /');
-    
+
   }
   else {
     $ausgabe = 'Login Fehlgschlagen!';
